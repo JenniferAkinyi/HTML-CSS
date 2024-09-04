@@ -76,7 +76,8 @@ main .account-details, main .order-details{
     border-radius: 1rem;
 }
 .account-details{
-    padding: 3rem;
+    padding: 1.5rem 4rem;
+    align-self: stretch;
 }
 
 .list{
@@ -85,7 +86,6 @@ main .account-details, main .order-details{
     align-items: center;
     list-style: none;
     color: gray;
-    margin-top: 0.8rem;
 }
 .list span{
     height: 1px;
@@ -160,9 +160,92 @@ button{
     margin-top: 70px;
     margin-bottom: 25px;
 }
+.order-details{
+    padding: 1.5rem;
+    align-items: start;
+}
+.order-details h3{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+.order-details .product-details img{
+    height: 15vh;
+    width: 100%;
+}
+.sony-quantity{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 15px;
+}
+.sony-quantity .sony{
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.sony-quantity .quantity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.quantity button{
+    background-color: #e2e8f0;
+    color: gray;
+    padding: 10px 15px;
+}
+.discount{
+    margin-top: 10px;
+    color: #e2e8f0;
+    font-weight: 500;
+    font-size: 12px;
+}
+.discount .inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+.discount .inputs input{
+    width: 70%;
+    background-color: #e2e8f0;
+    border: none;
+    padding: 13px;
+    border-radius: 7px;
+}
+.discount button{
+    background-color: transparent;
+    border: 1px solid #3182ce;
+    color: #3182ce;
+}
 .calculation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1rem; 
 }
+.calculation .total-names{
+    color: gray;
+
+    & #total{
+        color: #3e3f42;
+        font-weight: 500;
+    }
+}
+.calculation .total-cost{
+    color: #3e3f42;
+    font-weight: 500;
+
+    & #free{
+        color: #68c4c0;
+    }
+    
+}
+.calculation .total-names, .calculation .total-cost{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+    
