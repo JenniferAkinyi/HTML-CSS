@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* reset */
 *, *::before, *::after{
@@ -9,6 +9,7 @@
 
 html{
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
     /* 1rem = 16px; */
 }
 body{
@@ -24,6 +25,10 @@ nav{
     background-color: white;
     color: black;
     font-family: 'Roboto', sans-serif;
+}
+nav .image{
+    width: 3rem;
+    height: 2rem;
 }
 .details{
     display: flex;
@@ -57,33 +62,44 @@ hr{
 }
 .main-container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
     gap: 1rem;
     padding: 2rem;
 
-    & > *{
+    /* & > *{
         flex: 1;
-    }
+    } */
 }
 main .account-details, main .order-details{
-    background-color: #eaecee;
-    padding: 2rem;
+    background-color: #F7FAFC;
     border-radius: 1rem;
 }
+.account-details{
+    padding: 3rem;
+}
+
 .list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    gap: 5rem;
     color: gray;
     margin-top: 0.8rem;
 }
-.list > span{
-    font-weight: bold;
+.list span{
+    height: 1px;
+    width: 25px;
+    background-color: #3182ce;
+    margin: 6px;
 }
-
+.list #blue{
+    color: #3182ce;
+}
+.list img{
+    width: 20px;
+    height: 20px;
+}
 h4{
     font-size: 1rem;
     margin-top: 1rem;
@@ -95,13 +111,22 @@ h4{
 .form label{
     display: block;
     color: gray;
-   
+   font-size: 12px;
+   margin-top: 10px;
 }
 .form input{
     width: 100%;
-    padding: 0.5rem;
+    padding: 15px;
     border: 1px solid gray;
     outline: none;
+    margin-top: 10px;
+    background-color: #e2e8f0;
+    border-radius: 5px;
+    border: none;
+    background-image: url(./images/check.png);
+    background-repeat: no-repeat;
+    background-position: right 10px bottom 50%;
+    background-size: 17px;
 }
 .logging{
     display: flex;
@@ -116,17 +141,24 @@ h4{
     align-items: center;
     justify-content: flex-end;
 }
-p{
-    font-size: 0.9rem;
+.logging, .cancel-shipping p{
+    font-size: 13px;
+    color: gray;
 }
 button{
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #3498db;
+    background-color: #3182ce;
     color: white;
     cursor: pointer;
     outline: none;
+}
+.account-details hr{
+    height: 1px;
+    background-color: #eff3f7;
+    margin-top: 70px;
+    margin-bottom: 25px;
 }
 .calculation{
     display: flex;
